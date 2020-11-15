@@ -10,17 +10,17 @@ b3 = input("Ingrese el valor b3: ") ;     #  ->  b3
 
                                                                                        #calcular diagonal dominante
  function ea = erroraproximado(xnuevo,xanterior)         #|17| > |-2| + |-3| si cumple
-    ea = abs(((xnuevo-(xanterior))/(xnuevo))*100);            #|21| > |0.1| + |0.3| si cumple
+    ea = abs(((xnuevo-(xanterior))/(xnuevo))*100);            #|21| > |-5| + |-2| si cumple
 end                                                                                 #|22| > |-5| + |-5| si cumple
  
  i = 1;
-fprintf("%s\t %s\t %s\t %s\t %s\t %s\t %s\t %s\n",'i','x','y','z','|Ex|','|Ey|','|Ex|' );
+fprintf("%s\t %s\t %s\t %s\t %s\t %s\t %s\t %s\n",'i','x','y','z','|Ex|','|Ey|','|Ez|' );
 fprintf ("\n");  
 while(i <= NumeroIteraciones)                 
     
-    xn = (b1- ( -2*(y)  - 3*(z) ))/17;                   
-    yn = (b2- ( - 5*(x) - 2*(z) ))/21;          
-    zn = (b3- ( - 5*(x) - 5*(y) ))/22;    
+    xn = (b1- ( -2*(y) - 3*(z) ))/17;                   
+    yn = (b2- ( -5*(x) - 2*(z) ))/21;          
+    zn = (b3- ( -5*(x) - 5*(y) ))/22;    
   
     fprintf('%d\t', i); 
     fprintf('%.4f\t', xn);              
